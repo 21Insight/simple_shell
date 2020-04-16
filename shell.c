@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * main - program that interprets commands
+ * main - program that interprets commands.
  * @argc: number of args.
  * @argv: arguments passed to the program.
- * Return: 0 on success or other value
+ * Return: 0 on success or other value.
  */
 int main(__attribute__((unused)) int argc, char **argv)
 {

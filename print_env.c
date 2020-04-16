@@ -5,7 +5,7 @@
  */
 int print_env(void)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; environ[i] != NULL; i++)
 	{
