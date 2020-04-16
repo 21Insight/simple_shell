@@ -30,7 +30,7 @@ int main(__attribute__((unused)) int argc, char **argv)
 		{
 			args = _split(buffer, DELIMITERS);
 			if (args[0] != NULL)
-			{	
+			{
 			if ((_strcmp(args[0], "exit") && _strlen("exit") == 4) == 0)
 				check_exit(args, buffer, exit_value);
 			fpath(args);
