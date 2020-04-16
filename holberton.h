@@ -14,8 +14,8 @@
 
 #define DELIMITERS " \t\n\r"
 
-
 extern char **environ;
+void *_calloc(unsigned int nmemb, unsigned int size);
 void err(char **argv, char **args, int times);
 void itoa_err(int times);
 int _atoi(char *s);
