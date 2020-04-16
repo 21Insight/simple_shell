@@ -2,7 +2,11 @@
   <img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School logo">
 </p>
 
+HOLA POPO
+
+TErcer
+
 ## Authors & Copyrights
 
-* Antonio Estela <[AntonioEstela](https://github.com/AntonioEstela)>
-* Jose Cuervo <[21Insight](https://github.com/21Insight)>
+* [AntonioEstela](https://github.com/AntonioEstela)
+* [21Insight](https://github.com/21Insight)
