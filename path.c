@@ -20,7 +20,7 @@ int fpath(char **args)
 	{
 		if (args[0][0] == '/')
 			break;
-		if (_strcmp(args[0], "./") == 0)
+		if (_strncmp(args[0], "./") == 0)
 			break;
 		chdir(token[j]);
 		if (stat(args[0], &st) == 0)
