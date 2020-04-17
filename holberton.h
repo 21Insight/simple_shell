@@ -24,7 +24,7 @@ int _strlen(char *s);
 char *_strncat(char *dest, char *src, int n);
 int _strncmp(char *s1, char *s2);
 int _strcmp(char *s1, char *s2);
-char **_split(char *buffer, char *delimiters);
+void _split(char *buffer, char *delimiters, char **args);
 int execute_function(char **argv, char **args, int times, int *exit_val);
 void free_doubleptr(char **args);
 int print_env(void);
