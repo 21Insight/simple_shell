@@ -23,6 +23,7 @@ int execute_function(char **argv, char **args, int times, int *exit_val)
 	}
 	if (pid < 0)
 	{
+		free_doubleptr(args);
 		exit(EXIT_FAILURE);
 	}
 	if (pid > 0)
