@@ -11,13 +11,11 @@ void check_exit(char **args, char *buffer, int exit_value)
 	if (_strncmp(args[0], "exit") == 0 && args[1] != NULL)
 	{
 		exit_value = _atoi(args[1]);
-		free_doubleptr(args);
 		free(buffer);
 		exit(exit_value);
 	}
 	else
 	{
-		free_doubleptr(args);
 		free(buffer);
 		exit(exit_value);
 	}

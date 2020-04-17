@@ -5,16 +5,10 @@
  * @delimiters: delimiting characters.
  * Return: a double pointer with all the commands.
  */
-char **_split(char *buffer, char *delimiters)
+void _split(char *buffer, char *delimiters, char **args)
 {
 	char *token = NULL;
-	char **args = malloc(sizeof(char *) * _strlen(buffer) + 1);
 	int i = 0;
-
-	if (args == NULL || buffer == NULL)
-	{
-		return (NULL);
-	}
 
 	token = strtok(buffer, delimiters);
 
@@ -27,5 +21,4 @@ char **_split(char *buffer, char *delimiters)
 	}
 	args[i] = NULL;
 	free(token);
-	return (args);
 }

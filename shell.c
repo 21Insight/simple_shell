@@ -7,7 +7,7 @@
  */
 int main(__attribute__((unused)) int argc, char **argv)
 {
-	char *buffer = NULL, **args = NULL;
+	char *buffer = NULL, *args[32];
 	size_t length_buff = 0;
 	int times = 0;
 	int exit_value = 0, *exit_num = &exit_value;
@@ -28,14 +28,13 @@ int main(__attribute__((unused)) int argc, char **argv)
 			print_env();
 		if (*buffer != '\n')
 		{
-			args = _split(buffer, DELIMITERS);
+			_split(buffer, DELIMITERS, args);
 			if (args[0] != NULL)
 			{
-			if ((_strcmp(args[0], "exit") && _strlen("exit") == 4) == 0)
-				check_exit(args, buffer, exit_value);
-			fpath(args);
-			execute_function(argv, args, times, exit_num);
-			free_doubleptr(args);
+				if ((_strcmp(args[0], "exit") && _strlen("exit") == 4) == 0)
+					check_exit(args, buffer, exit_value);
+				fpath(args);
+				execute_function(argv, args, times, exit_num);
 			}
 		}
 	}
